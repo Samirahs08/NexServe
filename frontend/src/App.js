@@ -11,6 +11,7 @@ import MyBookings from './pages/MyBookings';
 import Chat from './pages/Chat';
 import EditProfile from './pages/EditProfile';
 import CategoryServices from './pages/CategoryServices';
+import AdminAnalytics from './pages/AdminAnalytics';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
 import './App.css';
@@ -31,6 +32,7 @@ function App() {
         <Route path="/my-bookings" element={<MyBookings />} />
         <Route path="/chat" element={<Chat />} />
         <Route path="/edit-profile" element={<EditProfile />} />
+        <Route path="/admin/analytics" element={<AdminAnalytics />} />
       </Routes>
       <Footer />
     </Router>

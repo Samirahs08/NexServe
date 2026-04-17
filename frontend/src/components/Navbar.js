@@ -49,6 +49,11 @@ function Navbar() {
             )}
             <Link to="/my-bookings" className={isActive('/my-bookings')}>Bookings</Link>
             <Link to="/chat" className={isActive('/chat')}>Chat</Link>
+            {user.role === 'ADMIN' && (
+              <Link to="/admin/analytics" className={isActive('/admin/analytics')} style={{ color: '#a78bfa' }}>
+                📊 Analytics
+              </Link>
+            )}
 
             <div className="nav-user-info">
               <div className="nav-avatar">{initial}</div>
